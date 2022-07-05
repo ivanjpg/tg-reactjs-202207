@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase01 - PruebaReact</title>
+</head>
+<body>
+  <!-- 
+    El div con id «root» servirá para cargar (render)
+    lo que hagamos en React. El identificador «root» se utiliza
+    por costumbre, pero puede tener cualquier nombre.
+   -->
+  <div id="root"></div>
+
+  <!-- 
+    Generamos otros elementos para visualizar los demás componentes
+    de React sin sobreescribirlos.
+   -->
+   <div id="root2"></div>
+   <div id="root3"></div>
+  
+  <!-- 
+    Cargamos ReactJS desde un CDN.
+    En este momento cargamos las versiones de desarrollo,
+    pero en cualquier momento podemos cambiar a las versiones
+    de producción, sustituyendo
+    «development.js» por «production.min.js» en ambas
+    cargas del script.
+  -->
+  <script src="https://unpkg.com/react@18.1/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18.1/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- 
+    Cargamos Babel, quien traducirá nuestra sintaxis JSX
+    a JS para que el navegador pueda interpretarlo.
+   -->
+   <script src="https://unpkg.com/babel-standalone@6/babel.min.js" crossorigin></script>
+
+  <!-- 
+    Cargamos nuestro Javascript
+   -->
+   <!-- <script src="index.js"></script> -->
+
+   <!-- 
+    Si nuestro archivo de JS contiene sintaxis JSX, entonces 
+    debemos especificar el tipo de archivo con el atributo
+    type="text/babel"
+    -->
+    <script src="index.js" type="text/babel"></script>
+</body>
+</html>
