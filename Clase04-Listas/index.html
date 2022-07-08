@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase04 - Listas</title>
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <div id="root"></div>
+  </div>
+
+  <hr>
+
+  <!-- 
+    Una manera de iniciar el desarrollo de una nueva aplicación con
+    React, es el modelar o maquetar el sitio o la página que se desea,
+    como si se hiciera un desarrollo «normal» en HTML.
+
+    Después de tener nuestra maqueta, comenzamos a dividirla en
+    diferentes componentes de React, de tal manera que puedan
+    ser reutilizados y obtengamos un desarrollo completamente modular.
+
+    Una de las partes fundamentales de la filosofía o modelo de
+    desarrollo de React, es el considerar que los componentes NO tienen
+    por qué estar al tanto de los otros componentes o de quiénes se
+    trata cuando están interactuando. Es decir, se busca obtener el
+    máximo de independencia entre los componentes.
+   -->
+
+   <!-- 
+    Realicemos una pequeña maqueta del sitio que queremos desarrollar.
+
+    Ejercicio 01:
+        Completar esta página, para que muestre, con HTML, una lista
+        de al menos tres imágenes con sus respectivas descripciones.
+    -->
+  <div class="container">
+    <h1>Lista de imágenes disponibles</h1>
+    <div class="lista-imagenes">
+      <ul class="row">
+        <li>
+          <div class="imagen col-sm-12 col-md-3">
+            <img src="https://picsum.photos/200/300?random=1" alt="">
+            <h3>Ipsum id labore voluptate veniam sunt pariatur.</h3>
+          </div>
+        </li>
+        <li>
+          <div class="imagen col-sm-12 col-md-3">
+            <img src="https://picsum.photos/200/300?random=2" alt="">
+            <h3>Sit cillum ullamco dolor ut consectetur voluptate nisi pariatur occaecat voluptate.</h3>
+          </div>
+        </li>
+        <li>
+          <div class="imagen col-sm-12 col-md-3">
+            <img src="https://picsum.photos/200/300?random=3" alt="">
+            <h3>Incididunt ex laborum officia ipsum.</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Cargamos AXIOS para peticiones HTTP -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <!-- Cargamos React -->
+  <script src="https://unpkg.com/react@18.1/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18.1/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Cargamos Babel -->
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js" crossorigin></script>
+
+  <!-- Cargamos nuestro código de JS -->
+  <script src="index.js" type="text/babel"></script>
+</body>
+</html>
